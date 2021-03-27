@@ -1,0 +1,240 @@
+.education {
+
+ /* background: #c6ac89; */
+ min-height: 100vh;
+}
+
+.timeline {
+ /* background: white; */
+ height: 100%;
+ padding-bottom: auto;
+}
+
+.timeline p {
+ font-size: 20px;
+}
+
+.timeline .content {
+ background: white;
+ /* border: 1px solid black; */
+ border-radius: 20px;
+ padding: 10px;
+ box-shadow: 5px 10px 18px #888888;
+}
+
+.timeline {
+ position: relative;
+ margin: 0 auto;
+ padding: 0px 0;
+ width: 1000px;
+ box-sizing: border-box;
+}
+
+.timeline ul {
+ margin: 0;
+ padding: 0;
+}
+
+.timeline:before {
+ content: "";
+ position: absolute;
+ left: 50%;
+ width: 6px;
+ height: 100vh;
+ background: #c5c5c5;
+}
+
+.timeline ul li {
+ list-style: none;
+ position: relative;
+ width: 50%;
+ padding: 20px 40px;
+ box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+ margin-top: 20px;
+ float: left;
+ text-align: right;
+ clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+ float: right;
+ margin-top: 20px;
+ text-align: left;
+ clear: both;
+}
+
+.content {
+ padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd):before {
+ content: "";
+ top: 35px;
+ right: -6px;
+ position: absolute;
+ width: 10px;
+ height: 10px;
+ background: white;
+ border-radius: 50%;
+ box-shadow: 0 0 0 3px #9e533c;
+}
+
+.timeline ul li:nth-child(even):before {
+ content: "";
+ top: 35px;
+ left: -4px;
+ position: absolute;
+ width: 10px;
+ height: 10px;
+ background: white;
+ border-radius: 50%;
+ box-shadow: 0 0 0 3px #9e533c;
+}
+
+.timeline ul li h3 {
+ margin: 0;
+ padding: 0;
+ font-weight: 600;
+ color: black;
+}
+
+.timeline ul li p {
+ margin: 10px 0 0;
+ padding: 0;
+}
+
+.timeline ul li .time h4 {
+ margin: 0;
+ padding: 0;
+ font-size: 14px;
+}
+
+.timeline ul li:nth-child(odd) .time {
+ position: absolute;
+ top: 24px;
+ right: -120px;
+ margin: 0;
+ padding: 10px 20px;
+ background: #645beb;
+ color: black;
+ border-radius: 18px;
+ box-shadow: 5px 10px 18px #888888;
+}
+
+.timeline ul li:nth-child(even) .time {
+ position: absolute;
+ top: 24px;
+ left: -100px;
+ margin: 0;
+ padding: 10px 20px;
+ background: #645beb;
+ color: black;
+ border-radius: 18px;
+ box-shadow: 5px 10px 18px #888888;
+}
+
+h1 {
+ text-align: center;
+ font-size: 60px;
+}
+
+@media (max-width: 1000px) {
+ .timeline {
+   width: 100%;
+ }
+
+ .education {
+   margin-bottom: 0px;
+   padding-bottom: 74px;
+ }
+}
+
+@media (max-width: 767px) {
+ h1 {
+   text-align: center;
+   font-size: 40px;
+   padding: 0 20px;
+ }
+
+ .timeline {
+   width: 100%;
+   padding-bottom: 0px;
+ }
+
+ .timeline:before {
+   left: 26px;
+ }
+
+ .education {
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+ }
+
+ .timeline ul li:nth-child(odd),
+ .timeline ul li:nth-child(even) {
+   margin-top: 50px;
+   width: 100%;
+   text-align: left;
+   padding-left: 50px;
+   padding-right: 50px;
+ }
+
+ .timeline ul li:nth-child(odd):before,
+ .timeline ul li:nth-child(even):before {
+   top: -17px;
+   left: 23px;
+ }
+
+ .timeline ul li:nth-child(odd) .time,
+ .timeline ul li:nth-child(even) .time {
+   top: -30px;
+   left: 50px;
+   right: inherit;
+ }
+}
+
+@media (min-height: 1280px) {
+ .timeline ul li {
+   padding-bottom: 170px;
+ }
+}
+
+@media (min-height: 960px) {
+ .timeline ul li {
+   padding-bottom: 120px;
+   padding-top: 40px;
+ }
+}
+
+@media (min-height: 1024px) {
+ .timeline ul li {
+   padding-bottom: 100px;
+ }
+}
+
+@media (min-height: 1366px) {
+ .education {
+   padding-bottom: 250px;
+ }
+}
+
+@media (max-height: 350px) {
+ .timeline {
+   padding-bottom: 80px;
+ }
+}
+
+@media (min-height: 1366px) {
+ .education {
+   height: 100vh;
+ }
+}
+
+@media (min-height: 1280px) {
+ .education {
+   height: 100vh;
+ }
+}
